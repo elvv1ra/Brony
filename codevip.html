@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BronyCon 2026 | Gallery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&amp;family=Be+Vietnam+Pro:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#001d35",
+                        "on-primary-container": "#75083d",
+                        "tertiary-container": "#63a9ee",
+                        "on-surface-variant": "#554147",
+                        "primary-container": "#fd79a8",
+                        "on-background": "#161d1f",
+                        "on-tertiary-fixed-variant": "#00497a",
+                        "on-tertiary-container": "#003d66",
+                        "surface-bright": "#f4fafd",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#352c8a",
+                        "outline-variant": "#dbc0c6",
+                        "primary-fixed": "#ffd9e2",
+                        "on-secondary-fixed-variant": "#413996",
+                        "surface": "#f4fafd",
+                        "on-error-container": "#93000a",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-tint": "#a53361",
+                        "secondary-container": "#a19afd",
+                        "surface-container-high": "#e2e9ec",
+                        "inverse-on-surface": "#ebf2f4",
+                        "inverse-surface": "#2b3234",
+                        "tertiary-fixed": "#d0e4ff",
+                        "on-secondary-fixed": "#140067",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#861949",
+                        "on-tertiary": "#ffffff",
+                        "surface-variant": "#dde4e6",
+                        "background": "#f4fafd",
+                        "outline": "#887177",
+                        "inverse-primary": "#ffb1c8",
+                        "surface-container-low": "#eef5f7",
+                        "primary": "#a53361",
+                        "secondary-fixed-dim": "#c5c0ff",
+                        "secondary": "#5952af",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-error": "#ffffff",
+                        "tertiary": "#0062a0",
+                        "on-surface": "#161d1f",
+                        "primary-fixed-dim": "#ffb1c8",
+                        "surface-container": "#e8eff1",
+                        "surface-container-highest": "#dde4e6",
+                        "surface-dim": "#d4dbdd",
+                        "secondary-fixed": "#e3dfff",
+                        "tertiary-fixed-dim": "#9ccaff",
+                        "on-primary-fixed": "#3e001d",
+                        "celestial": "#74b9ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "xl": "64px",
+                        "base": "8px",
+                        "sm": "12px",
+                        "lg": "40px",
+                        "gutter": "20px",
+                        "margin-desktop": "48px",
+                        "md": "24px",
+                        "xs": "4px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Comfortaa"],
+                        "headline-lg": ["Comfortaa"],
+                        "body-md": ["Be Vietnam Pro"],
+                        "display-lg": ["Comfortaa"],
+                        "label-sm": ["Be Vietnam Pro"],
+                        "label-lg": ["Be Vietnam Pro"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        .celestial-gradient {
+            background: linear-gradient(135deg, #74b9ff 0%, #a29bfe 100%);
+        }
+        .star-decoration {
+            mask-image: radial-gradient(circle at center, black 20%, transparent 80%);
+            background-image: radial-gradient(white 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .cutie-mark {
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-celestial selection:text-white overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="sticky top-0 w-full z-50 bg-surface/80 dark:bg-surface-container-lowest/80 backdrop-blur-xl border-b border-white/20 dark:border-surface-variant/10 shadow-sm">
+<div class="flex justify-between items-center w-full px-margin-desktop h-20 max-w-7xl mx-auto">
+<div class="text-headline-lg font-headline-lg text-primary dark:text-primary-fixed tracking-tight drop-shadow-sm">
+                BronyCon 2026
+            </div>
+<nav class="hidden md:flex items-center gap-md">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="{{DATA:SCREEN:SCREEN_20}}">Home</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="{{DATA:SCREEN:SCREEN_12}}">Schedule</a>
+<a class="text-primary dark:text-primary-fixed-dim font-bold border-b-2 border-primary font-label-lg text-label-lg" href="{{DATA:SCREEN:SCREEN_8}}">Gallery</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="{{DATA:SCREEN:SCREEN_19}}">Tickets</a>
+</nav>
+<div class="flex items-center gap-sm">
+<a class="hidden md:flex items-center gap-xs px-md py-sm bg-tertiary-container text-on-tertiary-container rounded-full hover:scale-105 transition-transform active:scale-95 font-label-lg text-label-lg" href="#vip-section">
+                    Visit VIP Hall
+                    <span class="material-symbols-outlined text-[18px]">star</span>
+</a>
+<button class="bg-primary text-on-primary px-lg py-sm rounded-full font-label-lg text-label-lg hover:opacity-90 transition-all flex items-center gap-xs" onclick="window.location.href='{{DATA:SCREEN:SCREEN_10}}'">
+                    Register
+                    <div class="cutie-mark w-6 h-6 bg-white rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[14px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-margin-desktop py-xl">
+<!-- Hero Section -->
+<section class="mb-xl text-center">
+<h1 class="text-display-lg font-display-lg text-primary mb-md">Memories of Friendship</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Relive the magic of BronyCon 2026. A celebration of harmony, creativity, and the wonderful community that makes every year spectacular.
+            </p>
+</section>
+<!-- Main Gallery Grid (Bento Style) -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-xl">
+<!-- Large Feature: Celestia -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl glass-card aspect-video">
+<img alt="Princess Celestia Cosplay" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0ui9tal8P7ULRvtFQyNwvEIamrxgg4eN7UObz81Hdi_9kO1WzMhlgq6zBpD__DE2DgXu30WusLD-6siO_Scwhf9dcq-X7IkANTfK5y7K7ycdBknFA9LZ04swJAgsRYBcJafD4B8yTJRz9g2O5CkBwwYGaEkoWZNDzZTvyYdr8XzRfLCGYhY4aq3tfGg3z97tcRtjFRaHjkuT1P05Wb56UCUR-_LF3VI_2kGIa84-SckYpD6bIFRnyWSJBaQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-lg">
+<span class="text-white font-headline-md text-headline-md">Princess Celestia</span>
+<span class="text-white/80 font-body-md text-body-md">The Sun's Radiance in the Garden</span>
+</div>
+<img alt="chibi icon" class="absolute top-4 right-4 w-12 h-12 z-20 pointer-events-none drop-shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU2ifrLzz5GwaMvdlvcMxXYXVgRsEU1IJTUeQPcQ089yo_q-ksvWR8Uk2mD7iwOVkyaFC-llQEd6cMILbTkG0QGZ-9oCOAKXkDbppC5iqAgh8wZe8z6O_fy1TRaFbjPmCIMh5artZTsvre583hP5QU-kT8bjy1LUNzTtCsA1Xn-8OvPQ6-cBSKqNBATVcp3-L1jg2E0E_3UC_0uY0jFsp_WNs375jvNyJd919KVLGzmcUjomChPKaEyvizJTzG_QiGUMXRrrpNnH0"/></div>
+<!-- Side Feature: Luna -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl glass-card aspect-[4/5] md:aspect-auto">
+<img alt="Princess Luna Cosplay" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0uhI4EgAEeOGo-T3ncQUZG63NVhcWA5-DBqNGqRAN3-3Lp-3h7-a4OlbsxDxZZyY_F4kVhiA6BFjCxpce-7JPxqguErKOMmBuuOHSvI_e04XF6rJMW-RQgExZ7rWyjRt7ut0EfbhHuvOXIgjKeKdAsnq4adZvGoHE_QnrSOkumhXc8EVQ8Rfjz-2oNYNsGpHmooLzBFDmk8OjwoS5mopJfRW3Gffg_gK-3rDEGfeXPevYgfyzutvJj6pmDM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-lg">
+<span class="text-white font-headline-md text-headline-md">Princess Luna</span>
+<span class="text-white/80 font-body-md text-body-md">Nighttime Majesty</span>
+</div>
+</div>
+<!-- Fluttershy Feature -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl glass-card aspect-square">
+<img alt="The Ultimate Fan Experience" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLiYZI_Gn4tg0l0sYYZm2aw8wy3GdkqJC4NUXPp7FWUM35YQXVLh0GzoH_4_1TXpUCcFS8Hw0zSHY6umzGwbM0YtOQWSzP5jrWC8W_9e8ArDtYkrDWNwDnJ0l4KsVbF6jcrXWXykWciLsy9dfoIlyzkmiWUYG6FHzCxa9RreMJSeuUq9nFme9tndTqMExiMiibHuX79TtZfE9XdJMLb6jQHL0GqMPesP_ycHU86sd099kgHbYpR6HQI3hB0dmaoiG-_FAX1iCM9EY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-lg">
+<span class="text-white font-headline-md text-headline-md">The Ultimate Fan Experience</span>
+<span class="text-white/80 font-body-md text-body-md">Pure Joy at the Convention</span>
+</div>
+<img alt="chibi icon" class="absolute bottom-4 left-4 w-12 h-12 z-20 pointer-events-none drop-shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU2ifrLzz5GwaMvdlvcMxXYXVgRsEU1IJTUeQPcQ089yo_q-ksvWR8Uk2mD7iwOVkyaFC-llQEd6cMILbTkG0QGZ-9oCOAKXkDbppC5iqAgh8wZe8z6O_fy1TRaFbjPmCIMh5artZTsvre583hP5QU-kT8bjy1LUNzTtCsA1Xn-8OvPQ6-cBSKqNBATVcp3-L1jg2E0E_3UC_0uY0jFsp_WNs375jvNyJd919KVLGzmcUjomChPKaEyvizJTzG_QiGUMXRrrpNnH0"/></div>
+<!-- Decorative Quote Card -->
+<div class="md:col-span-8 celestial-gradient rounded-xl p-xl flex flex-col items-center justify-center text-center relative overflow-hidden">
+<div class="star-decoration absolute inset-0 opacity-30"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-white text-[48px] mb-md" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<h2 class="text-white font-headline-lg text-headline-lg mb-sm italic">"Friendship is the only magic that grows when you share it."</h2>
+<div class="w-20 h-1 bg-white/40 rounded-full mx-auto"></div>
+</div>
+</div>
+</section>
+<!-- VIP Hall of Fame -->
+<section class="scroll-mt-32" id="vip-section">
+<div class="celestial-gradient rounded-xl p-xl shadow-2xl relative border-4 border-celestial/20">
+<div class="absolute top-0 right-0 p-lg opacity-10">
+<span class="material-symbols-outlined text-[120px] text-white" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<div class="flex flex-col items-center mb-lg">
+<div class="flex items-center gap-sm mb-xs">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">star</span>
+<h2 class="text-headline-lg font-headline-lg text-white text-center">VIP Alicorn Hall of Fame</h2>
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-white/80 text-label-lg font-label-lg uppercase tracking-widest">Our Most Radiant Supporters</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg max-w-5xl mx-auto">
+<!-- VIP 1 -->
+<button class="glass-card rounded-lg p-lg text-center flex flex-col items-center transform hover:-translate-y-2 transition-transform border-2 border-white/50 text-left w-full cursor-pointer group" onclick="document.getElementById('secret-modal').classList.remove('hidden'); document.getElementById('secret-modal').classList.add('flex')"><div class="w-20 h-20 rounded-full bg-celestial flex items-center justify-center mb-md border-4 border-white shadow-lg group-hover:scale-110 transition-transform"><span class="text-white font-headline-lg text-headline-lg">1</span></div><h3 class="text-headline-md font-headline-md text-primary mb-xs">Anastasia Velikaja</h3><div class="flex gap-xs text-celestial"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span></div></button>
+<!-- VIP 2 -->
+<div class="glass-card rounded-lg p-lg text-center flex flex-col items-center transform hover:-translate-y-2 transition-transform border-2 border-white/50">
+<div class="w-20 h-20 rounded-full bg-celestial flex items-center justify-center mb-md border-4 border-white shadow-lg">
+<span class="text-white font-headline-lg text-headline-lg">2</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary mb-xs">Oleksandr Flytershy</h3>
+<div class="flex gap-xs text-celestial">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<!-- VIP 3 -->
+<div class="glass-card rounded-lg p-lg text-center flex flex-col items-center transform hover:-translate-y-2 transition-transform border-2 border-white/50">
+<div class="w-20 h-20 rounded-full bg-celestial flex items-center justify-center mb-md border-4 border-white shadow-lg">
+<span class="text-white font-headline-lg text-headline-lg">3</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary mb-xs">Chipitosjan</h3>
+<div class="flex gap-xs text-celestial">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-high dark:bg-surface-container-lowest border-t border-white/10 w-full rounded-t-xl mt-auto">
+<div class="flex flex-col items-center gap-lg py-xl px-margin-desktop w-full max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between w-full items-center md:items-start gap-lg">
+<div class="text-center md:text-left space-y-sm">
+<div class="flex items-center gap-sm justify-center md:justify-start">
+<img alt="BronyCon Logo" class="h-8 w-8 object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ugdWR7QJUhnlrznO_maj5GOcWeVVY9GHWgYsp0f8pY82lgDWK0iRXOBSGbvH_PE7QQ2lU8Amb2Uw1vjFtNpsfnYwXdVQ9vkiedZbBSUeybZ10v6kAcdb3tOQOGQYfoVJORDU93gAASa8QpjhbvD33m41qzqTNTDypirjd62mg4dbGOGk-YtqH-Qu1WHF_y7VnLrAaYHaD01NIe785-9I0Wh2XEzl03terrbjhzHz3UTIOvUEMyhmWYrwA"/>
+<span class="text-headline-md font-headline-md text-secondary">BronyCon</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-xs">Connecting fans across the world through the power of friendship and creativity.</p>
+</div>
+<div class="grid grid-cols-2 gap-xl">
+<div class="space-y-sm">
+<p class="text-label-lg font-label-lg text-secondary uppercase">Event</p>
+<nav class="flex flex-col gap-xs">
+<a class="text-on-surface-variant hover:text-primary underline transition-all text-body-md font-body-md" href="{{DATA:SCREEN:SCREEN_20}}">About Us</a>
+<a class="text-on-surface-variant hover:text-primary underline transition-all text-body-md font-body-md" href="{{DATA:SCREEN:SCREEN_12}}">Schedule</a>
+<a class="text-on-surface-variant hover:text-primary underline transition-all text-body-md font-body-md" href="{{DATA:SCREEN:SCREEN_19}}">Tickets</a>
+</nav>
+</div>
+<div class="space-y-sm">
+<p class="text-label-lg font-label-lg text-secondary uppercase">Legal</p>
+<nav class="flex flex-col gap-xs">
+<a class="text-on-surface-variant hover:text-primary underline transition-all text-body-md font-body-md" href="#">Code of Conduct</a>
+<a class="text-on-surface-variant hover:text-primary underline transition-all text-body-md font-body-md" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary underline transition-all text-body-md font-body-md" href="#">Contact</a>
+</nav>
+</div>
+</div>
+</div>
+<div class="w-full h-px bg-on-surface-variant/10"></div>
+<div class="flex flex-col md:flex-row justify-between items-center w-full gap-md">
+<p class="text-label-lg font-label-lg text-on-surface-variant">© 2026 BronyCon. Friendship is Magic.</p>
+<div class="flex gap-md">
+<a class="text-secondary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-secondary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-secondary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions for glass cards
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+
+        // Smooth scroll for VIP Hall button
+        document.querySelector('a[href^="#"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+<div class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4" id="secret-modal" onclick="this.classList.add('hidden')"><div class="relative max-w-sm w-full bg-surface rounded-xl overflow-hidden shadow-2xl animate-in zoom-in duration-300"><button class="absolute top-2 right-2 w-10 h-10 flex items-center justify-center bg-white/20 rounded-full text-white hover:bg-white/40 transition-colors"><span class="material-symbols-outlined">close</span></button><img alt="Secret Bunny Pony" class="w-full h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4QJvZvfuG9M9p5pBn9kv3Lmpo60sxABt-UU_zCVXtkjP2A6laLRgg5QVpz2ntG-LnWsP35ccsfCKQDmARPAVu-WH-NqwLtrmtLnbnZNbVO4uuX_aSbU2q2H4bbIjW0N3JS2N5ZS-cFsZPIgsBtdl2uQkUkTsy7EI2DeyjxRykCGa5J4IP5KaIzgheMeqUyAuXbtJvdWUWsqYKXyKipBP7cHqllOgXu7VJ9MK4o3WN1kOYSRa4V-5ZNlThs-gAZPo_9Bpdt3zHM-Q"/></div></div><div class="flex justify-center pb-xl"><img alt="Sleeping Pony" class="w-48 h-auto opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhhwh24aKOKYmiKGwwpbQQzi6wsb2j2RNksA4yewDU2Gra6V4uWPMJSIou6NXRHFwMtWHcW2aswwEy239pFMB39jkTtsf56cj9R3XiMjz3AqQ93MQu_eIw81FUxjn8inYSk6u7HvT1OlxKTWUkEAwqrAOx1tMSRiNZnMaH4RPTf2m1dVsm16eK2q0WEIhpO7zSXs2ljIf631GrpBdhR_0bq6vk_Lz9f7M6zw_aOElAO0S892JxNDiwHjwTUNa7GiRmanv3xWiKAhU"/></div></body></html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Grand Schedule | BronyCon 2026</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 8px 32px 0 rgba(165, 51, 97, 0.05);
+        }
+        .cutie-mark-glow {
+            box-shadow: 0 0 15px rgba(253, 121, 168, 0.4);
+        }
+        .magical-gradient {
+            background: linear-gradient(135deg, #a53361 0%, #5952af 100%);
+        }
+        .tab-active {
+            box-shadow: 0 4px 14px 0 rgba(165, 51, 97, 0.2);
+        }
+        body {
+            background: radial-gradient(circle at top right, #fff5f8 0%, #f4fafd 100%);
+            min-height: 100vh;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-surface": "#161d1f",
+                      "on-primary-fixed-variant": "#861949",
+                      "secondary-fixed": "#e3dfff",
+                      "on-tertiary-container": "#003d66",
+                      "on-secondary-container": "#352c8a",
+                      "on-primary": "#ffffff",
+                      "surface-container-low": "#eef5f7",
+                      "tertiary-container": "#63a9ee",
+                      "surface-dim": "#d4dbdd",
+                      "on-error-container": "#93000a",
+                      "surface-variant": "#dde4e6",
+                      "surface-tint": "#a53361",
+                      "on-background": "#161d1f",
+                      "tertiary": "#0062a0",
+                      "on-tertiary-fixed": "#001d35",
+                      "tertiary-fixed-dim": "#9ccaff",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-fixed-variant": "#00497a",
+                      "outline-variant": "#dbc0c6",
+                      "on-surface-variant": "#554147",
+                      "inverse-surface": "#2b3234",
+                      "tertiary-fixed": "#d0e4ff",
+                      "background": "#f4fafd",
+                      "on-secondary-fixed": "#140067",
+                      "secondary": "#5952af",
+                      "surface-container-highest": "#dde4e6",
+                      "primary-container": "#fd79a8",
+                      "error": "#ba1a1a",
+                      "inverse-on-surface": "#ebf2f4",
+                      "on-primary-container": "#75083d",
+                      "primary-fixed-dim": "#ffb1c8",
+                      "on-error": "#ffffff",
+                      "secondary-container": "#a19afd",
+                      "surface": "#f4fafd",
+                      "primary-fixed": "#ffd9e2",
+                      "on-primary-fixed": "#3e001d",
+                      "on-secondary": "#ffffff",
+                      "outline": "#887177",
+                      "surface-bright": "#f4fafd",
+                      "on-tertiary": "#ffffff",
+                      "primary": "#a53361",
+                      "surface-container": "#e8eff1",
+                      "surface-container-high": "#e2e9ec",
+                      "error-container": "#ffdad6",
+                      "inverse-primary": "#ffb1c8",
+                      "secondary-fixed-dim": "#c5c0ff",
+                      "on-secondary-fixed-variant": "#413996"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "base": "8px",
+                      "gutter": "20px",
+                      "md": "24px",
+                      "margin-mobile": "16px",
+                      "sm": "12px",
+                      "lg": "40px",
+                      "xl": "64px",
+                      "xs": "4px",
+                      "margin-desktop": "48px"
+              },
+              "fontFamily": {
+                      "display-lg": ["comfortaa"],
+                      "headline-lg": ["comfortaa"],
+                      "headline-md": ["comfortaa"],
+                      "body-md": ["beVietnamPro"],
+                      "body-lg": ["beVietnamPro"],
+                      "label-sm": ["beVietnamPro"],
+                      "label-lg": ["beVietnamPro"]
+              },
+              "fontSize": {
+                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                      "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="font-body-md text-on-surface antialiased">
+<!-- Top Navigation Bar -->
+<nav class="bg-surface/80 dark:bg-surface-on-surface/80 backdrop-blur-lg fixed top-0 w-full z-50 shadow-sm border-b border-white/20">
+<div class="flex justify-between items-center px-margin-desktop h-20 max-w-7xl mx-auto">
+<div class="flex items-center gap-sm">
+<img alt="BronyCon 2026 Logo" class="h-14 w-auto drop-shadow-sm" src="https://lh3.googleusercontent.com/aida/ADBb0ugdWR7QJUhnlrznO_maj5GOcWeVVY9GHWgYsp0f8pY82lgDWK0iRXOBSGbvH_PE7QQ2lU8Amb2Uw1vjFtNpsfnYwXdVQ9vkiedZbBSUeybZ10v6kAcdb3tOQOGQYfoVJORDU93gAASa8QpjhbvD33m41qzqTNTDypirjd62mg4dbGOGk-YtqH-Qu1WHF_y7VnLrAaYHaD01NIe785-9I0Wh2XEzl03terrbjhzHz3UTIOvUEMyhmWYrwA"/>
+<span class="font-headline-md text-headline-md text-primary drop-shadow-sm">BronyCon 2026</span>
+</div>
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-300" href="{{DATA:SCREEN:SCREEN_20}}">Home</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="{{DATA:SCREEN:SCREEN_12}}">Schedule</a>
+<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-300" href="{{DATA:SCREEN:SCREEN_8}}">Gallery</a>
+<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-300" href="{{DATA:SCREEN:SCREEN_19}}">Tickets</a>
+<a class="bg-primary text-on-primary px-xl py-xs rounded-full font-label-lg flex items-center gap-2 hover:scale-105 transition-all duration-300" href="{{DATA:SCREEN:SCREEN_10}}">
+                    Register
+                    <div class="w-6 h-6 bg-white rounded-full flex items-center justify-center cutie-mark-glow">
+<span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1">auto_awesome</span>
+</div>
+</a>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative py-xl overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-20 pointer-events-none">
+<div class="absolute top-10 left-10 w-64 h-64 bg-primary rounded-full blur-[100px]"></div>
+<div class="absolute bottom-10 right-10 w-96 h-96 bg-secondary rounded-full blur-[120px]"></div>
+</div>
+<div class="max-w-7xl mx-auto px-margin-desktop text-center relative z-10">
+<div class="mb-sm inline-flex items-center gap-2 px-md py-xs rounded-full bg-primary-container/20 text-on-primary-container font-label-lg">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">colors_spark</span>
+                    Equestria's finest events
+                </div>
+<h1 class="font-display-lg text-display-lg text-primary mb-md">The Grand Schedule</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    Prepare for a weekend of magic, friendship, and wonder. From dazzling masquerades to creative workshops, your destiny awaits!
+                </p>
+</div>
+</section>
+<!-- Schedule Tabs & Grid -->
+<section class="pb-xl">
+<div class="max-w-7xl mx-auto px-margin-desktop">
+<!-- Tab Controls -->
+<div class="flex justify-center mb-xl">
+<div class="bg-surface-container-high p-xs rounded-full flex items-center gap-xs">
+<button class="tab-active bg-white text-primary px-xl py-md rounded-full font-headline-md transition-all duration-300 flex items-center gap-sm" id="btn-day1" onclick="switchTab('day1')">
+<span class="material-symbols-outlined">calendar_today</span>
+                            Day 1 (Friday)
+                        </button>
+<button class="text-on-surface-variant px-xl py-md rounded-full font-headline-md hover:bg-white/50 transition-all duration-300 flex items-center gap-sm" id="btn-day2" onclick="switchTab('day2')">
+<span class="material-symbols-outlined">calendar_month</span>
+                            Day 2 (Saturday)
+                        </button>
+</div>
+</div>
+<!-- Event Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter" id="schedule-container">
+<!-- Feature Card (Bento Layout) -->
+<div class="lg:col-span-8 group cursor-pointer">
+<div class="glass-card rounded-xl p-xl h-full border-primary/10 hover:border-primary/40 transition-all duration-500 overflow-hidden relative">
+<div class="flex flex-col h-full">
+<div class="flex justify-between items-start mb-lg">
+<span class="bg-primary text-on-primary px-md py-xs rounded-full font-label-sm"><span class="material-symbols-outlined text-[12px] mr-1">star</span>Main Stage Event</span>
+<span class="text-primary font-headline-md">7:00 PM</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-sm group-hover:text-primary transition-colors">Cosplay Masquerade</h3>
+<p class="text-on-surface-variant mb-xl max-w-md">The legendary showcase of creativity and craftsmanship. Watch your favorite characters come to life in a dazzling performance.</p>
+<div class="mt-auto flex items-center gap-sm text-secondary font-label-lg">
+<span class="material-symbols-outlined">location_on</span>
+                                    Crystal Ballroom
+                                </div>
+</div>
+<div class="absolute -right-10 -bottom-10 w-48 h-48 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[180px]">theaters</span>
+</div>
+</div>
+</div>
+<!-- Marketplace Card -->
+<div class="lg:col-span-4 group cursor-pointer">
+<div class="glass-card rounded-xl p-xl h-full border-secondary/10 hover:border-secondary/40 transition-all duration-500">
+<div class="flex flex-col h-full">
+<div class="flex justify-between items-start mb-lg">
+<span class="bg-secondary text-on-secondary px-md py-xs rounded-full font-label-sm"><span class="material-symbols-outlined text-[12px] mr-1">shopping_bag</span>Shopping</span>
+<span class="text-secondary font-headline-md">10:00 AM</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Artist Alley</h3>
+<p class="text-on-surface-variant mb-lg">Discover unique creations, stickers, and prints from talented community artists.</p>
+<div class="mt-auto flex items-center gap-sm text-on-surface-variant font-label-lg">
+<span class="material-symbols-outlined text-secondary">storefront</span>
+                                    Marketplace Pavilion
+                                </div>
+</div>
+</div>
+</div>
+<!-- Voice Actor Panel -->
+<div class="lg:col-span-5 group cursor-pointer">
+<div class="glass-card rounded-xl p-xl border-tertiary/10 hover:border-tertiary/40 transition-all duration-500 bg-tertiary-container/5">
+<div class="flex flex-col h-full">
+<div class="flex justify-between items-start mb-lg">
+<span class="bg-tertiary text-on-tertiary px-md py-xs rounded-full font-label-sm"><span class="material-symbols-outlined text-[12px] mr-1">record_voice_over</span>Panel</span>
+<span class="text-tertiary font-headline-md">1:00 PM</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Panel with Voice Actors</h3>
+<p class="text-on-surface-variant mb-lg">Live Q&amp;A and behind-the-scenes stories from the voices behind the Mane Six.</p>
+<div class="flex items-center gap-sm text-on-surface-variant font-label-lg">
+<span class="material-symbols-outlined text-tertiary">mic</span>
+                                    Harmony Hall
+                                </div>
+</div>
+</div>
+</div>
+<!-- Workshop Card -->
+<div class="lg:col-span-7 group cursor-pointer">
+<div class="glass-card rounded-xl p-xl border-primary-container/20 hover:border-primary-container transition-all duration-500 flex flex-col md:flex-row gap-lg">
+<div class="flex-1">
+<div class="flex justify-between items-start mb-lg">
+<span class="bg-primary-container text-on-primary-container px-md py-xs rounded-full font-label-sm"><span class="material-symbols-outlined text-[12px] mr-1">palette</span>Creative</span>
+<span class="text-on-primary-container font-headline-md">3:30 PM</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Fan Art Workshop</h3>
+<p class="text-on-surface-variant mb-lg">Learn character design and magical lighting techniques from industry professionals.</p>
+<div class="flex items-center gap-sm text-on-surface-variant font-label-lg">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1">brush</span>
+                                    Artist Studio B
+                                </div>
+</div>
+<div class="w-full md:w-48 h-48 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover rounded-lg group-hover:scale-110 transition-transform duration-700" data-alt="A close-up photograph of a digital artist's hand using a stylus on a professional tablet, surrounded by colorful pastel art supplies and magical MLP-themed figurines. The setting is a brightly lit workshop with soft morning sunlight casting friendly shadows across a wooden desk. The color palette is dominated by lavender and soft pinks, reflecting a creative and inspiring atmosphere for a fan art tutorial." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfvzP02WR5QIqSR4RZFho5MUiRpHA0Rvm9aW0xy5w3tnkFwfe3I26MpFIfRrOkYvGZgxJXa9JzuuH1LLySd-bCBYcPx20PPFT0L-_sJz4b0nxBRzZ7_S-XpeotVb_k0LGQKaroHMFcDPW5wl5mEUxtDwELEg9yCseqdl1Fd-9syQj2eaHdwvTUgUOC9hHLtZtzGVB_JIOiaeb6wMuAyAeYhnlWAXudM7ljicOw6Xa4ksYCXnllfN15xJ4XSpSlu5qYN_eZYO20WRA"/>
+</div>
+</div>
+</div>
+<div class="lg:col-span-12 flex justify-center mt-lg">
+<img alt="High-quality vector style chibi pony character, white/pastel body, colorful magical hair, cute expressive eyes, sitting pose, clean lines, transparent background, My Little Pony style." class="w-32 h-32 object-contain animate-bounce" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU2ifrLzz5GwaMvdlvcMxXYXVgRsEU1IJTUeQPcQ089yo_q-ksvWR8Uk2mD7iwOVkyaFC-llQEd6cMILbTkG0QGZ-9oCOAKXkDbppC5iqAgh8wZe8z6O_fy1TRaFbjPmCIMh5artZTsvre583hP5QU-kT8bjy1LUNzTtCsA1Xn-8OvPQ6-cBSKqNBATVcp3-L1jg2E0E_3UC_0uY0jFsp_WNs375jvNyJd919KVLGzmcUjomChPKaEyvizJTzG_QiGUMXRrrpNnH0"/>
+</div></div>
+</div>
+</section>
+<!-- Ticket CTA Section -->
+<section class="max-w-7xl mx-auto px-margin-desktop mb-xl">
+<div class="magical-gradient rounded-xl p-xl text-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;"></div>
+<div class="relative z-10">
+<h2 class="font-headline-lg text-headline-lg text-on-primary mb-md">Ready to start your journey?</h2>
+<p class="text-on-primary/80 mb-xl max-w-xl mx-auto font-body-lg">Limited tickets remaining for BronyCon 2026. Join thousands of fans for the celebration of a lifetime!</p>
+<div class="flex flex-col sm:flex-row gap-md justify-center items-center">
+<a class="bg-white text-primary px-xl py-md rounded-full font-headline-md flex items-center gap-sm hover:shadow-xl transition-all duration-300" href="{{DATA:SCREEN:SCREEN_19}}">
+                            Buy Tickets
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1">confirmation_number</span>
+</div>
+</a>
+<div class="flex items-center gap-xs">
+<div class="w-24 h-3 bg-white/20 rounded-full overflow-hidden">
+<div class="h-full bg-primary-container w-[85%] rounded-full relative">
+<div class="absolute right-0 top-0 bottom-0 w-2 bg-white blur-[2px]"></div>
+</div>
+</div>
+<span class="text-on-primary font-label-sm">85% Sold Out</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-secondary-container dark:bg-on-secondary-fixed-variant w-full rounded-t-lg">
+<div class="flex flex-col items-center gap-md py-xl px-margin-desktop text-center">
+<div class="font-headline-sm text-headline-sm text-on-secondary-container flex items-center gap-2">
+<span class="material-symbols-outlined">auto_awesome</span>
+                BronyCon 2026
+            </div>
+<div class="flex flex-wrap justify-center gap-lg">
+<a class="font-body-md text-body-md text-on-secondary-container opacity-80 hover:opacity-100 hover:text-white transition-opacity" href="#contact">Contact Us</a>
+<a class="font-body-md text-body-md text-on-secondary-container opacity-80 hover:opacity-100 hover:text-white transition-opacity" href="#privacy">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-secondary-container opacity-80 hover:opacity-100 hover:text-white transition-opacity" href="#conduct">Code of Conduct</a>
+<a class="font-body-md text-body-md text-on-secondary-container opacity-80 hover:opacity-100 hover:text-white transition-opacity" href="#volunteer">Volunteer</a>
+</div>
+<p class="font-body-md text-body-md text-on-secondary-container max-w-2xl">
+                © 2026 BronyCon - Celebrating the Magic of Friendship. A tribute to the Mane Six: Twilight Sparkle, Pinkie Pie, Rainbow Dash, Rarity, Applejack, and Fluttershy.
+            </p>
+</div>
+</footer>
+<script>
+        function switchTab(day) {
+            const btn1 = document.getElementById('btn-day1');
+            const btn2 = document.getElementById('btn-day2');
+            const container = document.getElementById('schedule-container');
+
+            if(day === 'day1') {
+                btn1.classList.add('tab-active', 'bg-white', 'text-primary');
+                btn1.classList.remove('text-on-surface-variant');
+                btn2.classList.remove('tab-active', 'bg-white', 'text-primary');
+                btn2.classList.add('text-on-surface-variant');
+                
+                // Content transition effect
+                container.style.opacity = '0';
+                setTimeout(() => {
+                    // In a real app we'd swap content here
+                    container.style.opacity = '1';
+                }, 150);
+            } else {
+                btn2.classList.add('tab-active', 'bg-white', 'text-primary');
+                btn2.classList.remove('text-on-surface-variant');
+                btn1.classList.remove('tab-active', 'bg-white', 'text-primary');
+                btn1.classList.add('text-on-surface-variant');
+
+                container.style.opacity = '0';
+                setTimeout(() => {
+                    container.style.opacity = '1';
+                }, 150);
+            }
+        }
+
+        // Add float animation to background elements
+        document.addEventListener('mousemove', (e) => {
+            const amount = 20;
+            const x = (e.clientX / window.innerWidth - 0.5) * amount;
+            const y = (e.clientY / window.innerHeight - 0.5) * amount;
+            
+            document.querySelectorAll('.glass-card').forEach(card => {
+                card.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+            });
+        });
+    </script>
+</body></html>
